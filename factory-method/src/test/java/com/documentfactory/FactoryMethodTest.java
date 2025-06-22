@@ -27,9 +27,7 @@ class FactoryMethodTest {
 
         DocumentFactory pdfFactory = new PdfDocumentFactory("My PDF Doc", "Bob", "Short.");
 
-        Exception exception = assertThrows(IllegalStateException.class, () -> {
-            pdfFactory.processDocument();
-        });
+        Exception exception = assertThrows(IllegalStateException.class, pdfFactory::processDocument);
 
         assertEquals("PdfDocument content too short", exception.getMessage());
     }
