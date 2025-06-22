@@ -11,7 +11,7 @@ public class PdfDocument extends Document {
 
     @Override
     public void validate() {
-        if (content == null || content.length() < 5) {
+        if (content == null || content.length() < 10) {
             throw new IllegalStateException("PdfDocument content too short");
         }
         System.out.println("PdfDocument validated");

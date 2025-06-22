@@ -1,4 +1,4 @@
-
+package com.documentfactory;
 
 import com.documentfactory.factory.DocumentFactory;
 import com.documentfactory.factory.PdfDocumentFactory;
