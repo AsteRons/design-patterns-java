@@ -9,7 +9,7 @@ class StripeCurrencyConverterService implements CurrencyConverterService {
 
     private static final Map<String, Double> exchangeRates = Map.of(
             "USD", 1.0,
-            "EUR", 1.1,
+            "EUR", 2.0,
             "JPY", 0.007,
             "GBP", 1.3);
 
