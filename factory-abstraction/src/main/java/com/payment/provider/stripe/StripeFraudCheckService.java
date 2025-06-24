@@ -2,7 +2,7 @@ package com.payment.provider.stripe;
 
 import com.payment.domain.FraudCheckService;
 
-public class StripeFraudCheckService implements FraudCheckService {
+ class StripeFraudCheckService implements FraudCheckService {
     @Override
     public boolean checkFraud(String userId, double amount) {
 
