@@ -16,6 +16,7 @@ import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
 
+import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 import static org.mockito.Mockito.times;
@@ -41,7 +42,8 @@ class PaymentFacadeTest {
 
         String userId = "user123";
         double amount = 1000.0;
-        String currency = "EUR";
+        String fromCurrency = "EUR";
+        String toCurrency = "USD";
 
         String provider = "stripe";
 
@@ -50,9 +52,10 @@ class PaymentFacadeTest {
         providerType = PaymentProviderType.valueOf(provider.toUpperCase());
 
         PaymentProviderFactory factory = PaymentFactoryRegistry.getFactory(providerType);
+
         PaymentFacade facade = new PaymentFacade(factory);
 
-        facade.pay(userId, amount, currency);
+        facade.pay(userId, amount, fromCurrency, toCurrency);
 
     }
 }
