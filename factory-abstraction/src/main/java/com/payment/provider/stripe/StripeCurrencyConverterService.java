@@ -2,7 +2,6 @@ package com.payment.provider.stripe;
 
 import com.payment.domain.CurrencyConverterService;
 
-import java.util.HashMap;
 import java.util.Map;
 
 class StripeCurrencyConverterService implements CurrencyConverterService {
