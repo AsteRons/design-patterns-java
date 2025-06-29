@@ -1,6 +1,6 @@
-package com.payment.composite;
+package com.composite.payment.composite;
 
-import com.payment.Payment;
+import com.composite.payment.Payment;
 
 import java.util.ArrayList;
 import java.util.List;

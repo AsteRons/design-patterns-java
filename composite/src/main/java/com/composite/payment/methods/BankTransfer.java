@@ -1,6 +1,6 @@
-package com.payment.methods;
+package com.composite.payment.methods;
 
-import com.payment.Payment;
+import com.composite.payment.Payment;
 
 public class BankTransfer implements Payment {
     private final String iban;

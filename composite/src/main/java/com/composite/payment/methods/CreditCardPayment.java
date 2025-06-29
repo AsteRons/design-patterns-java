@@ -1,6 +1,6 @@
-package com.payment.methods;
+package com.composite.payment.methods;
 
-import com.payment.Payment;
+import com.composite.payment.Payment;
 
 public class CreditCardPayment implements Payment {
     private final String cardNumber;

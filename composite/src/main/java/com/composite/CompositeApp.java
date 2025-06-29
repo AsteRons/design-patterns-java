@@ -1,4 +1,4 @@
-package com.payment;
+package com.composite;
 
 
 public class CompositeApp {
