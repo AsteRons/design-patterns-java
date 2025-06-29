@@ -16,4 +16,8 @@ public class TreeFactory {
     public static int getTotalTreeTypes() {
         return treeTypes.size();
     }
+
+    public static void reset() {
+        treeTypes.clear();
+    }
 }

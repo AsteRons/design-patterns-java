@@ -14,4 +14,7 @@ public class Tree {
     public void draw() {
         type.draw(x, y);
     }
+
+    public int getX() { return x; }
+    public int getY() { return y; }
 }
