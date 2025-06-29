@@ -6,7 +6,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CompositePayment implements Payment {
-    private final List<Payment> methods = new ArrayList<>();
+    private List<Payment> methods;
+
+    public CompositePayment() {
+        methods = new ArrayList<>();
+    }
 
     public void add(Payment payment) {
         methods.add(payment);

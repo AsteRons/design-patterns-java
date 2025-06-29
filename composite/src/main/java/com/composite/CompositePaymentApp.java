@@ -1,7 +1,7 @@
 package com.composite;
 
 
-public class CompositeApp {
+public class CompositePaymentApp {
     public static void main( String[] args ) {
 
     }
