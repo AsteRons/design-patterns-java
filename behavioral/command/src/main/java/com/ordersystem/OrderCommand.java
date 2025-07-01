@@ -1,6 +1,7 @@
 package com.ordersystem;
 
-public class App {
+public class OrderCommand {
     public static void main( String[] args ) {
     }
 }
+
