@@ -1,6 +1,7 @@
-package com.order.model;
+package com.order.dispatcher;
 
 import com.order.listener.OrderStatusChangeListener;
+import com.order.model.OrderStatusChangedEvent;
 
 import java.util.ArrayList;
 import java.util.List;

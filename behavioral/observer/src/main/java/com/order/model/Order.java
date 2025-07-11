@@ -1,7 +1,7 @@
 package com.order.model;
 
 
-import com.order.model.OrderStatusChangedEvent;
+import com.order.dispatcher.OrderStatusEventDispatcher;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
@@ -19,8 +19,11 @@ public class Order {
     private transient OrderStatusEventDispatcher dispatcher;
 
     public void setStatus(String newStatus) {
+
         if (!newStatus.equals(this.status)) {
+
             String oldStatus = this.status;
+
             this.status = newStatus;
 
             if (dispatcher != null) {
