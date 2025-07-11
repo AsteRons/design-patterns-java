@@ -16,7 +16,7 @@ public class SnapshotableOrder {
     }
 
     public OrderSnapshot createSnapshot() {
-        return new OrderSnapshot(order.deepCopy()); // ensure deep copy!
+        return new OrderSnapshot(order.deepCopy());
     }
 
     public void restore(OrderSnapshot snapshot) {

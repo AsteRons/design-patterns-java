@@ -1,6 +1,6 @@
 package com.order;
 
-public class SnapshotApp {
+public class OrderSnapshot {
     public static void main( String[] args ) {
     }
 }

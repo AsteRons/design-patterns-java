@@ -1,6 +1,7 @@
 package com.order.model;
 
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Getter;
 import lombok.ToString;
 
@@ -11,6 +12,7 @@ import java.util.stream.Collectors;
 
 @Getter
 @ToString
+@Builder
 @AllArgsConstructor
 public class Order {
     private final String id;
