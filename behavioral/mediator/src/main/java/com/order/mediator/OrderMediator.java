@@ -1,6 +1,7 @@
 package com.order.mediator;
 
-public class OrderMediator {
-    public static void main( String[] args ) {
-    }
+import com.order.model.Order;
+
+public interface OrderMediator {
+    void processOrder(Order order);
 }
